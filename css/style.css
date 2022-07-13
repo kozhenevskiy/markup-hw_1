@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap');
+
+:root {
+    --yellow: #FFCA42;
+    --grey: #969AA0;
+    --blue: #1B3764;
+    --white: #fff;
+    --light-grey: #F4F8FF;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 0 10px;
+    color: var(--grey);
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    font-family: 'Cardo', serif;
+}
+
+a:hover {
+    opacity: 0,7;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cardo', serif;
+    color: var(--blue);
+    margin: 0 0 20px;
+}
+
+h1 { 
+    font-size: 42px;
+    line-height: 1.19;
+    font-family: 'Cardo', serif;
+    color: var(--blue);
+}
+
+.title-center {
+    position: relative;
+    padding-bottom: 26px;
+    text-align: center;
+}
+
+.title-center:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--yellow);
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    background: var(--yellow);
+    border: 2px solid var(--yellow);
+    font-family: 'Cardo', serif;
+    padding: 17px 50px;
+    color: var(--blue);
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.btn-outline {
+    background: transparent;
+}
+
+.btn-primary {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: var(--white);
+}
+
+.section-header {
+    padding-bottom: 50px;
+}
+
+section {
+    padding: 126px 0 102px;
+}
+
+.section-authors .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -24px;
+    justify-content: center;
+}
+
+.section-authors .col {
+    width: 50%;
+    min-width: 650px;
+    padding: 0 24px 48px;
+}
+
+.section-authors .card {
+    display: flex;
+}
+
+.section-authors .preview {
+    max-width: 307px;
+    width: 100%;
+    padding-top: 67.2%;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-authors .card-description {
+    width: calc(100% - 307px);
+    padding: 49px 0 49px 30px;
+}
+
+.section-authors .card-title {
+    margin-bottom: 7px;
+    font-size: 32px;
+    line-height: 1.18;
+}
+
+.price {
+    color: var(--yellow);
+    font-size: 21px;
+    vertical-align: top;
+    margin-bottom: 17px;
+    display: inline-block;
+}
+
+.cat-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cat-item {
+    position: relative;
+    padding-left: 26px;
+    margin-bottom: 27px;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.cat-item:before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background: var(--yellow);
+    border-radius: 50%;
+}
+
+
+/* Style fot section Trusted By The Best */
+
+.best-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.best-card {
+    flex: 1 1 250px;
+    margin: 10px 15px 0;
+    text-align: center;
+}
+
+.best-card_img {
+    display: block;
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section-trusted h4 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+/* Style fot section Articles & Resources */
+
+.articles-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article-card {
+    margin: 10px 10px 0;
+    flex: 1 1 360px;
+    max-width: 420px;
+    text-align: left;
+}
+
+.article-card-description {
+    padding: 25px 30px;
+    background: var(--white);
+}
+
+.article-card-img {
+    background-size: cover;
+    width: 100%;
+    padding-top: 83.27%;
+    display: block;
+}
+
+.articles h4 {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.articles {
+    background: var(--light-grey);
+}
+
+.articles-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.readmore {
+    font-size: 19px;
+    line-height: 1.2;
+    position: relative;
+}
+
+.readmore::after {
+    content: "";
+    position: absolute;
+    background: var(--blue);
+    bottom: 0;
+    left: 0;
+    right: -10px;
+    height: 2px;
+}
+
+.articles time {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
